@@ -10,6 +10,7 @@
 		new simpleParallax(image,{scale:3});
 	}
 
+
 </script>
 <html lang="en">
 <head>
@@ -21,29 +22,47 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" type="text/css" href="full-page-scroll.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Maitreya Verma</title>
 </head>
-<body>
-	<div id="main" class="scroll-container">
+<body onload="myFunction()">
+	<div class="loader-wrapper" id="loader">
+		<div class="loader"></div>
+		<!-- <span class="loader"><span class="loader-inner"></span></span>loading... -->
+	</div>
+	<div id="main" class="scroll-container"style="display:none;">
 		<section style="background-color:#DCADAD">
-			<div class="row name">
-				<div class="col-6" style="font-size:1.5em; padding-top:2em; padding-left:2em; text-align: justify;">
-					<h1> Maitreya Verma</h1>
-					I am currently working as a software developer in Morgan Stanley.<br>I graduated from Indian Institute of Technology (IIT) Bombay in 2019 with B.Tech in Mechanical Engineering.
+			<div style="height: 100%; overflow: hidden; position: relative;">
+				<div class="row name">
+					<div class="col-6" style="font-size:1.5em; padding-top:2em; padding-left:2em; text-align: justify;">
+						<h1> Maitreya Verma</h1>
+						I am currently working as a software developer in Morgan Stanley.<br>I graduated from Indian Institute of Technology (IIT) Bombay in 2019 with B.Tech in Mechanical Engineering.
 
+					</div>
+					<div class="col-2">
+					</div>
+					<div class="col-4">
+						<img src="cover.jpg" width="100%">
+					</div>
 				</div>
-				<div class="col-2">
-				</div>
-				<div class="col-4">
-					<img src="cover.jpg" width="100%">
-				</div>
-			</div>
-			<div class="quote">
-				<div class="container" style="text-align: justify; ">
-				"Don't ever, for any reason, do anything, to anyone, for any reason, ever, no matter what, no matter where, or who, or who you are with, or where you are going, or where you've been, ever, for any reason whatsoever."
-				<div style="text-align: right;">
-					~ Michael Scott 
-				</div> 
+				<div class="row" style="height: 100%;position: absolute; width: 100%;" >
+					<div class="col-4" style="background-color:#FF8811">
+						<div style="margin-top: 10em;">
+							<center>
+								<a href="#1" style="color: #9DD9D2; text-align: center;"><i class="fa fa-arrow-down" style="font-size:100px;color: #9DD9D2;"></i></a>
+							</center>
+						</div>
+					</div>
+					<div class="col-7">
+						<div class="quote">
+							<div class="container" style="text-align: justify; ">
+								"Don't ever, for any reason, do anything, to anyone, for any reason, ever, no matter what, no matter where, or who, or who you are with, or where you are going, or where you've been, ever, for any reason whatsoever."
+								<div style="text-align: right;">
+									~ Michael Scott 
+								</div> 
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -53,6 +72,17 @@
 	</div>
 	<script src="full-page-scroll.min.js"></script>
 	<script type="text/javascript">
+		$(window).on("load",function(){
+
+		});
+		function myFunction() {
+				myVar = setTimeout(showPage, 1000);
+			}
+
+			function showPage() {
+				document.getElementById("loader").style.display = "none";
+				document.getElementById("main").style.display = "block";
+			}	
 		new fullScroll({
 			mainElement: 'main',
 			displayDots: true,
