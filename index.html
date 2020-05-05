@@ -1,1 +1,66 @@
-Hello world
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+
+
+<script language="javascript">
+	window.onload=function(e){
+		var image = document.getElementsByClassName('thumbnail');
+		new simpleParallax(image,{scale:3});
+	}
+
+</script>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="full-page-scroll.min.css">
+	<title>Maitreya Verma</title>
+</head>
+<body>
+	<div id="main" class="scroll-container">
+		<section style="background-color:#DCADAD">
+			<div class="row name">
+				<div class="col-6" style="font-size:1.5em; padding-top:2em; padding-left:2em; text-align: justify;">
+					<h1> Maitreya Verma</h1>
+					I am currently working as a software developer in Morgan Stanley.<br>I graduated from Indian Institute of Technology (IIT) Bombay in 2019 with B.Tech in Mechanical Engineering.
+
+				</div>
+				<div class="col-2">
+				</div>
+				<div class="col-4">
+					<img src="cover.jpg" width="100%">
+				</div>
+			</div>
+			<div class="quote">
+				<div class="container" style="text-align: justify; ">
+				"Don't ever, for any reason, do anything, to anyone, for any reason, ever, no matter what, no matter where, or who, or who you are with, or where you are going, or where you've been, ever, for any reason whatsoever."
+				<div style="text-align: right;">
+					~ Michael Scott 
+				</div> 
+				</div>
+			</div>
+		</section>
+		<!-- <img src="bg2.jpg" class="thumbnail" width="50%"></section> -->
+		<section style="background-color:#555594"> Section 2</section>
+		<section style="background-color:#5992AD"> Section 3</section>
+	</div>
+	<script src="full-page-scroll.min.js"></script>
+	<script type="text/javascript">
+		new fullScroll({
+			mainElement: 'main',
+			displayDots: true,
+			dotsPosition: 'left',
+			animateTime: 0.7,
+			animateFunction: 'ease'
+		});
+	</script>
+</body>
+
+</html>

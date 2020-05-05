@@ -1,0 +1,30 @@
+.name{
+	background-color: #9DD9D2;
+}
+body{
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	background-color: #FFF8F0;
+	color:#392F5A;
+}
+
+.top{
+		/*background-color: #38AECC;*/
+	background-color: #ff8811;
+}
+.top-text{
+	color:#FFFDF5 !important;
+	font-size: 3em; 
+}
+.about{
+	background-color: #FF8811;
+}
+.quote{
+	font-family: garden;
+	padding-top: 5em;
+	font-size: 1.5em;
+}
+
+@font-face {
+  font-family: 'garden';
+  src: URL('Countryside/country.ttf') format('truetype');
+}
