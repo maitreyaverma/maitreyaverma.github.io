@@ -1,32 +1,53 @@
+.section1{
+	background-color:#DCADAD
+}
 .name{
 	background-color: #9DD9D2;
+	font-size:1.5em;  padding-left:2em; text-align: justify;
+}
+.name .col-6{
+	padding-top: 2em;
+}
+.sec2arrow{
+	color: #9DD9D2; text-align: center;
+}
+.arrowdiv{
+	background-color:#FF8811;
+}
+.arrowdiv .fa-arrow-down{
+	font-size:100px;color: #9DD9D2;
 }
 body{
 	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
 	background-color: #FFF8F0;
 	color:#392F5A;
 }
-
-.top{
-		/*background-color: #38AECC;*/
-	background-color: #ff8811;
-}
-.top-text{
-	color:#FFFDF5 !important;
-	font-size: 3em; 
-}
-.about{
-	background-color: #FF8811;
-}
 .quote{
 	font-family: garden;
 	padding-top: 5em;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
+
+.section2{
+	background-color:#FF8811; position: relative;
+}
+.card-header{
+	background-color: #DADAD9;
+}
+.card-body{
+	background-color: #EDE6E3;
+}
+.card-body a{
+	background-color: #F06449;
+}
+
+
+
+
 
 @font-face {
   font-family: 'garden';
-  src: URL('Countryside/country.ttf') format('truetype');
+  src: URL('pacifico/Pacifico.ttf') format('truetype');
 }
 
 .loader-wrapper {

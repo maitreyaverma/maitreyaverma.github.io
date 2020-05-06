@@ -3,7 +3,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
 
-
 <script language="javascript">
 	window.onload=function(e){
 		var image = document.getElementsByClassName('thumbnail');
@@ -31,10 +30,10 @@
 		<!-- <span class="loader"><span class="loader-inner"></span></span>loading... -->
 	</div>
 	<div id="main" class="scroll-container"style="display:none;">
-		<section style="background-color:#DCADAD">
-			<div style="height: 100%; overflow: hidden; position: relative;">
+		<section class="section1">
+			<div style="height: 100%; overflow: hidden; ">
 				<div class="row name">
-					<div class="col-6" style="font-size:1.5em; padding-top:2em; padding-left:2em; text-align: justify;">
+					<div class="col-6">
 						<h1> Maitreya Verma</h1>
 						I am currently working as a software developer in Morgan Stanley.<br>I graduated from Indian Institute of Technology (IIT) Bombay in 2019 with B.Tech in Mechanical Engineering.
 
@@ -46,16 +45,18 @@
 					</div>
 				</div>
 				<div class="row" style="height: 100%;position: absolute; width: 100%;" >
-					<div class="col-4" style="background-color:#FF8811">
+					<div class="col-4 arrowdiv">
 						<div style="margin-top: 10em;">
 							<center>
-								<a href="#1" style="color: #9DD9D2; text-align: center;"><i class="fa fa-arrow-down" style="font-size:100px;color: #9DD9D2;"></i></a>
+								<a href="#1" class="sec2arrow" >
+									<i class="fa fa-arrow-down"></i>
+								</a>
 							</center>
 						</div>
 					</div>
 					<div class="col-7">
-						<div class="quote">
-							<div class="container" style="text-align: justify; ">
+						<div class="quote" >
+							<div class="container" style="text-align: justify;" id="quote">
 								"Don't ever, for any reason, do anything, to anyone, for any reason, ever, no matter what, no matter where, or who, or who you are with, or where you are going, or where you've been, ever, for any reason whatsoever."
 								<div style="text-align: right;">
 									~ Michael Scott 
@@ -67,28 +68,65 @@
 			</div>
 		</section>
 		<!-- <img src="bg2.jpg" class="thumbnail" width="50%"></section> -->
-		<section style="background-color:#555594"> Section 2</section>
-		<section style="background-color:#5992AD"> Section 3</section>
+		<section class="section2"> 
+			<div class="container" style="padding-top: 2em;">
+				<h2>
+					Projects
+				</h2>
+				<div class="row" style="padding-top: 0.5em">
+					<div class="col-3">
+						<div class="card text-center">
+							<div class="card-header">
+								Online Learning Project
+							</div>
+							<div class="card-body">
+<!-- 								<h5 class="card-title"></h5> -->
+								<p class="card-text">
+									Developed online learning algorithms for applying them in bi-dimensional state space.
+
+								</p>
+								<a href="https://github.com/maitreyaverma/OnlineLearningProject" target="_blank" class="btn btn-primary" style="width: 100%;">Project code</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- 			<div class="row" style="height: 80%; width: 100%; position: absolute; bottom: 0;">
+				<div class="col-1" style="background-color: red;">
+				</div>
+			</div> -->
+		</section>
+		<!-- <section style="background-color:#5992AD"> Section 3</section> -->
 	</div>
 	<script src="full-page-scroll.min.js"></script>
+
 	<script type="text/javascript">
 		$(window).on("load",function(){
 
 		});
 		function myFunction() {
-				myVar = setTimeout(showPage, 1000);
-			}
+			myVar = setTimeout(showPage, 1000);
+		}
 
-			function showPage() {
-				document.getElementById("loader").style.display = "none";
-				document.getElementById("main").style.display = "block";
-			}	
+		function showPage() {
+			document.getElementById("loader").style.display = "none";
+			document.getElementById("main").style.display = "block";
+		}	
 		new fullScroll({
 			mainElement: 'main',
 			displayDots: true,
 			dotsPosition: 'left',
 			animateTime: 0.7,
 			animateFunction: 'ease'
+		});
+
+	</script>
+	<script >
+		$(document).scroll({
+			var scrollPos = $('.name').scrollTop();
+			var transY = scrollPos / 2;
+			$('.quote').css('transform':'translateY(' + transY + ')');
+
 		});
 	</script>
 </body>
