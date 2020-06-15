@@ -1,0 +1,150 @@
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+
+<script language="javascript">
+	window.onload=function(e){
+		var image = document.getElementsByClassName('thumbnail');
+		new simpleParallax(image,{scale:3});
+	}
+
+
+</script>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="full-page-scroll.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Maitreya Verma</title>
+</head>
+<body onload="myFunction()">
+	<div class="loader-wrapper" id="loader">
+		<div class="loader"></div>
+		<!-- <span class="loader"><span class="loader-inner"></span></span>loading... -->
+	</div>
+	<div id="main" class="scroll-container"style="display:none;">
+		<section class="section1">
+			<div style="height: 100%; overflow: hidden; ">
+				<div class="row name">
+					<div class="col-6">
+						<h1> Maitreya Verma</h1>
+						I am currently working as a software developer in Morgan Stanley.<br>I graduated from Indian Institute of Technology (IIT) Bombay in 2019 with B.Tech in Mechanical Engineering.
+
+					</div>
+					<div class="col-2">
+					</div>
+					<div class="col-4">
+						<img src="cover.jpg" width="100%">
+					</div>
+				</div>
+				<div class="row" style="height: 100%;position: absolute; width: 100%;" >
+					<div class="col-4 arrowdiv">
+						<div style="margin-top: 10em;">
+							<center>
+								<a href="#1" class="sec2arrow" >
+									<i class="fa fa-arrow-down"></i>
+								</a>
+							</center>
+						</div>
+					</div>
+					<div class="col-7">
+						<div class="quote" >
+							<div class="container" style="text-align: justify;" id="quote">
+								"Don't ever, for any reason, do anything, to anyone, for any reason, ever, no matter what, no matter where, or who, or who you are with, or where you are going, or where you've been, ever, for any reason whatsoever."
+								<div style="text-align: right;">
+									~ Michael Scott 
+								</div> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <img src="bg2.jpg" class="thumbnail" width="50%"></section> -->
+		<section class="section2"> 
+			<div class="container" style="padding-top: 2em;">
+				<h2>
+					Projects
+				</h2>
+				<div class="row" style="padding-top: 0.5em">
+					<div class="col-3">
+						<div class="card text-center">
+							<div class="card-header">
+								Online Learning Project
+							</div>
+							<div class="card-body">
+<!-- 								<h5 class="card-title"></h5> -->
+								<p class="card-text">
+									Developed online learning algorithms for applying them in bi-dimensional state space.
+
+								</p>
+								<a href="https://github.com/maitreyaverma/OnlineLearningProject" target="_blank" class="btn btn-primary" style="width: 100%;">Project code</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-3">
+						<div class="card text-center">
+							<div class="card-header">
+								Bitmex backtest 
+							</div>
+							<div class="card-body">
+<!-- 								<h5 class="card-title"></h5> -->
+								<p class="card-text">
+									Backtesting the bitmex market-maker code. <br>Created dummy exchange server.
+
+								</p>
+								<a href="https://github.com/BitMEX/sample-market-maker" target="_blank" class="btn btn-primary" style="width: 100%;">Project code</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- 			<div class="row" style="height: 80%; width: 100%; position: absolute; bottom: 0;">
+				<div class="col-1" style="background-color: red;">
+				</div>
+			</div> -->
+		</section>
+		<!-- <section style="background-color:#5992AD"> Section 3</section> -->
+	</div>
+	<script src="full-page-scroll.min.js"></script>
+
+	<script type="text/javascript">
+		$(window).on("load",function(){
+
+		});
+		function myFunction() {
+			myVar = setTimeout(showPage, 1000);
+		}
+
+		function showPage() {
+			document.getElementById("loader").style.display = "none";
+			document.getElementById("main").style.display = "block";
+		}	
+		new fullScroll({
+			mainElement: 'main',
+			displayDots: true,
+			dotsPosition: 'left',
+			animateTime: 0.7,
+			animateFunction: 'ease'
+		});
+
+	</script>
+	<script >
+		$(document).scroll({
+			var scrollPos = $('.name').scrollTop();
+			var transY = scrollPos / 2;
+			$('.quote').css('transform':'translateY(' + transY + ')');
+
+		});
+	</script>
+</body>
+
+</html>
